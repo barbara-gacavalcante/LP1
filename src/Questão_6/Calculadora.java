@@ -1,6 +1,6 @@
-/* Exerc�cio 08 � Anagrama
-* Aluno: B�rbara Geovanna Alves Cavalcante � Matricula: 20220055021
-* Aluno: Samuel da Silva Ferreira � Matricula: 20220054946
+/* Exercício 07 – Operações Matrizes
+* Aluno: Bárbara Geovanna Alves Cavalcante – Matricula: 20220055021
+* Aluno: Samuel da Silva Ferreira – Matricula: 20220054946
 */
 
 package Questão_6;
