@@ -43,7 +43,7 @@ public class ClubeDeCampo {
         cc[i] = new ClubeDeCampo(Integer.parseInt(arr[0]), Float.parseFloat(arr[1]));
 
       }
-    } catch (Exception e) {
+    } catch (NumberFormatException e) {
       e.printStackTrace();
     }
   }

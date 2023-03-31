@@ -29,19 +29,21 @@ public class RhEmpresa {
     System.out.println("Maior salário: " + salaryInfo[0] + "; Média salarial: " + salaryInfo[1]);
     System.out.println("*********************************************");
     System.out.println("Funcionários que recebem o maior salário: ");
+
     for (String e : rich) {
       if (e != null) {
         System.out.println(e);
       }
     }
+
     System.out.println("*********************************************");
     System.out.println("Funcionários que recebem menos que a média salarial: ");
+
     for (String e : poor) {
       if (e != null) {
         System.out.println(e);
       }
     }
-
   }
 
   public static void checkEmployees() {

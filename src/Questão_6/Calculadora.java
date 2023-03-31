@@ -22,56 +22,61 @@ public class Calculadora {
       System.out.println(
           "'1' - Dobro     '2' - Triplo      '3' - Metade\n'4' - Quadrado      '5' - Cubo      '6' - Raiz Quadrada\n'7' - Raiz Cúbica     '8' - Módulo      '9' - Inverso\n'0' - Sair do programa\n");
       option = sc.nextInt();
-    } while (option == 0 || (option < 0 || option > 9));
+    } while (option != 0 || (option < 0 || option > 9));
     return option;
   }
 
   public static void compute(int option) {
-    float N;
-    System.out.println("\nDigite um número para realizar a operação escolhida: ");
-    N = sc.nextFloat();
-    switch (option) {
-      case 1: {
-        N = dobro(N);
-        break;
-      }
-      case 2: {
-        N = triplo(N);
-        break;
-      }
-      case 3: {
-        N = metade(N);
-        break;
-      }
-      case 4: {
-        N = quadrado(N);
-        break;
-      }
-      case 5: {
-        N = cubo(N);
-        break;
-      }
-      case 6: {
-        N = raiz_quadrada(N);
-        break;
-      }
-      case 7: {
-        N = raiz_cubica(N);
-        break;
-      }
-      case 8: {
-        N = modulo(N);
-        break;
-      }
-      case 9: {
-        N = inverso(N);
-        break;
-      }
-      default: {
-        System.out.println("Finalizando programa!");
-      }
+    if (option == 0) {
+      System.out.println("Finalizando programa!");
+      return;
     }
-    System.out.println("O resultado é: " + N);
+    float N;
+    try {
+      System.out.println("\nDigite um número para realizar a operação escolhida: ");
+      N = sc.nextFloat();
+      switch (option) {
+        case 1: {
+          N = dobro(N);
+          break;
+        }
+        case 2: {
+          N = triplo(N);
+          break;
+        }
+        case 3: {
+          N = metade(N);
+          break;
+        }
+        case 4: {
+          N = quadrado(N);
+          break;
+        }
+        case 5: {
+          N = cubo(N);
+          break;
+        }
+        case 6: {
+          N = raiz_quadrada(N);
+          break;
+        }
+        case 7: {
+          N = raiz_cubica(N);
+          break;
+        }
+        case 8: {
+          N = modulo(N);
+          break;
+        }
+        case 9: {
+          N = inverso(N);
+          break;
+        }
+      }
+      System.out.println("O resultado é: " + N);
+    } catch (NumberFormatException e) {
+      e.printStackTrace();
+    }
   }
 
   public static float dobro(float N) {
