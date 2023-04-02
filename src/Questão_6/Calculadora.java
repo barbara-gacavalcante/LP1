@@ -22,7 +22,7 @@ public class Calculadora {
       System.out.println(
           "'1' - Dobro     '2' - Triplo      '3' - Metade\n'4' - Quadrado      '5' - Cubo      '6' - Raiz Quadrada\n'7' - Raiz Cúbica     '8' - Módulo      '9' - Inverso\n'0' - Sair do programa\n");
       option = sc.nextInt();
-    } while (option != 0 || (option < 0 || option > 9));
+    } while (option != 0 && (option < 0 || option > 9));
     return option;
   }
 

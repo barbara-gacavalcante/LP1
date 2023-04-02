@@ -4,9 +4,12 @@
 */
 
 import java.util.Scanner;
+import java.io.*;
 
 public class EleicaoSindical {
   public static void main(String[] args) throws Exception {
+
+    int coisa; 
     System.out.println("Hello, World!");
     compute();
   }

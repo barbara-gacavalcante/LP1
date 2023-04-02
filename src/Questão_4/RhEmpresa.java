@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class RhEmpresa {
 
-  final static int N = 4;
+  final static int N = 2;
   public static final RhEmpresa[] rh = new RhEmpresa[N];
 
   private String name;
@@ -82,7 +82,8 @@ public class RhEmpresa {
   public static String[] richEmployees(RhEmpresa[] rh, float bigSalary) {
     String[] employees = new String[N];
     for (int i = 0; i < N; i++) {
-      if (rh[i].salary > bigSalary) {
+      System.out.println(rh[i].salary);
+      if (rh[i].salary >= bigSalary) {
         employees[i] = rh[i].name;
       }
     }
